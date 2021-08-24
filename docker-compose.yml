@@ -2,6 +2,8 @@
 # set LOGSTASH_HOST to dns/ip of logstash host
 
 proxy:
+  labels:
+        shipyard.route: '/'
   container_name: proxy
   restart: always
   image: accenture/adop-nginx:0.3.2
